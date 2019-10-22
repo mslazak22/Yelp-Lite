@@ -1,0 +1,17 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1>{{model.name}}</h1>
+        <br>
+        <img class= "details-img"src={{model.photos}} alt= {{model.name}}>
+        
+        <ul>
+            <li><a href= {{model.url}}> Visit Website</a></li>
+            <li>Phone:{{model.display_phone}}</li>
+            <li>Address: {{model.location.formatted_address}}</li>
+            <li>Rating: {{model.rating}}</li>
+            <li>Price: {{model.price}}</li>
+        </ul>
+
+        {{outlet}}
+    </div>
+</div>

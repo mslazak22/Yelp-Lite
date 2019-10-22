@@ -1,5 +1,33 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="navbar-brand">
+                {{#link-to 'index' tagName="li"}}<img src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1503513646/muuixhlid4bawe013fbc.png"
+                    alt="Yelp Lite" style="width:40px;"> {{/link-to}}
+            </li>
+            <li class="nav-item">
+                {{#link-to 'index' tagName="li"}}<a class="nav-link">Home</a>{{/link-to}}
+            </li>
+            <li class="nav-item">
+                {{#link-to 'favorites' tagName="li"}}<a class="nav-link">Favorites</a>{{/link-to}}
+            </li>
+            <li class="nav-item ">
+                {{#link-to 'about' tagName="li"}}<a class="nav-link">About</a>{{/link-to}}
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                {{#link-to 'about' tagName="li"}}<a class="nav-link">Login</a>{{/link-to}}
+            </li>
+            <li class="nav-item">
+                {{#link-to 'about' tagName="li"}}<a class="nav-link">Sign up</a>{{/link-to}}
+            </li>
+        </ul>
+    </div>
+</nav>
+
 
 {{outlet}}

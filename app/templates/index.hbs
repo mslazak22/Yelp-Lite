@@ -1,0 +1,45 @@
+
+<section id="hero">
+    <div class="container">
+
+        <div class="searchwrapper">
+            <div class="searchbox">
+                
+                <div class="row">
+                    <div class="col-md-5">
+                        <Input class="form-control" @value={{term}} @placeholder="What are you looking for..?"
+                        />
+                        <ul>
+                            {{#each model.business as |business|}}
+                            <li>
+                                <LinkTo @route='details' @model={{business.id}}>{{business.name}}</LinkTo>
+                            </li>
+                            {{/each}}
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <Input class="form-control" @value={{location}} placeholder="Location" /></div>
+                    <div class="col-md-3">
+                        <select class="form-control category">
+                            <option>Category</option>
+                            <option>Hotels</option>
+                            <option>Cafes</option>
+                            <option>Nightlife</option>
+                            <option>Restauarants</option>
+                        </select>
+                    </div>
+                    <div class="col-md-1"><input type="button" class="btn btn-dark " value="Search"></div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p class="text-center">Copyright © 2019 Yelp-Lite. All Rights Reserved</p>
+    </div>
+</footer>
