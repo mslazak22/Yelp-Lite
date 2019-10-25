@@ -1,58 +1,28 @@
 # yelp-lite
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Author: Matthew Slazak
 
-## Prerequisites
+This is an ember app that uses Apollo to get data from a Yelp Graphql API. The user can search and save favorite restaurants, hotels, bars and more.
 
-You will need the following things properly installed on your computer.
+## Time spent
+Describe the time you spent on the project.
+ * Tutorials, research: 4 hours
+ * Coding required stories: 4 hours
+ * Optional and extras: 1 hours
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with npm)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+## User stories
 
-## Installation
+### Required
+ * [ ] Search capability with at least three facets (e.g. name, category, location, price level, etc)
+ * [x] Search should show some form of “auto-complete” as the user is typing.
+ * [x] Display detailed business information, such as:
+         Phone
+         Review Count and details
+         Hours
+ * [ ] Stretch: Show location in Google Maps
 
-* `git clone <repository-url>` this repository
-* `cd yelp-lite`
-* `npm install`
 
-## Running / Development
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-* Visit your tests at [http://localhost:4200/tests](http://localhost:4200/tests).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Linting
-
-* `npm run lint:hbs`
-* `npm run lint:js`
-* `npm run lint:js -- --fix`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-# Yelp-Lite
+### Extra
+  Uses bootstrap!
+ 
