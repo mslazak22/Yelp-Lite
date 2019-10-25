@@ -2,6 +2,16 @@
 
 module.exports = function(environment) {
   let ENV = {
+      firebase: {
+        apiKey: "AIzaSyC7Gdxqic7iUrsacMfIL61Nd9CPz5cgUjQ",
+        authDomain: "yelp-lite.firebaseapp.com",
+        databaseURL: "https://yelp-lite.firebaseio.com",
+        projectId: "yelp-lite",
+        storageBucket: "yelp-lite.appspot.com",
+        messagingSenderId: "1003977889404",
+        appId: "1:1003977889404:web:20a21455d100766dbedbf9",
+        measurementId: "G-NTNZP78XM9"
+      },
     modulePrefix: 'yelp-lite',
     environment,
     rootURL: '/',

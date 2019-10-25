@@ -1,16 +1,24 @@
+
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1>{{model.name}}</h1>
+        <h1>{{model.business.name}}</h1>
         <br>
-        <img class= "details-img"src={{model.photos}} alt= {{model.name}}>
+        <img class= "details-img"src={{model.business.photos}} alt= {{model.business.name}}>
         
         <ul>
-            <li><a href= {{model.url}}> Visit Website</a></li>
-            <li>Phone:{{model.display_phone}}</li>
-            <li>Address: {{model.location.formatted_address}}</li>
-            <li>Rating: {{model.rating}}</li>
-            <li>Price: {{model.price}}</li>
+            <li><a href= {{model.business.url}}> Visit Website</a></li>
+            <li>Phone:{{model.business.display_phone}}</li>
+            <li>Address: {{model.business.location.formatted_address}}</li>
+            <li>Rating: {{model.business.rating}}</li>
+            <li>Price: {{model.business.price}}</li>
         </ul>
+
+  {{#if model.favorite}}
+  <button class="btn btn-dark "{{action 'unsave'}}>Unsave</button>
+  {{else}}
+  <button class="btn btn-dark "{{action 'save'}}>Save</button>
+  {{/if}}
+
 
         {{outlet}}
     </div>

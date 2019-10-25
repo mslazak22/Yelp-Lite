@@ -7,16 +7,20 @@
                 
                 <div class="row">
                     <div class="col-md-5">
-                        <Input class="form-control" @value={{term}} @placeholder="What are you looking for..?"
-                        />
-                        <ul>
-                            {{#each model.business as |business|}}
-                            <li>
-                                <LinkTo @route='details' @model={{business.id}}>{{business.name}}</LinkTo>
-                            </li>
-                            {{/each}}
-                        </ul>
+           <Input class="form-control"
+    @value={{term}}
+    @placeholder="What are you looking for..?"
+    @enter={{action "submitter"}} />
 
+  {{#if model.business}}
+    <ul class="autocomplete-results">
+      {{#each model.business as |business|}}
+      <li>
+        <LinkTo @route='details' @model={{business.id}}>{{business.name}}</LinkTo>
+      </li>
+      {{/each}}
+    </ul>
+  {{/if}}
                     </div>
                     <div class="col-md-3">
                         <Input class="form-control" @value={{location}} placeholder="Location" /></div>
